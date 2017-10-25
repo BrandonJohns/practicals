@@ -4,7 +4,7 @@ import shutil
 
 def main():
     os.chdir('FilesToSort')
-    print(os.getcwd())
+    #print(os.getcwd())
     extensions = []
     for filename in os.listdir('.'):
         if not os.path.isdir(filename):

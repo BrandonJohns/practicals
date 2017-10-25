@@ -36,7 +36,7 @@ def main():
             os.rename(filename, new_name)
 
             # Option 2: move file to new place, with new name
-            shutil.move(filename, 'temp/' + new_name)
+            # shutil.move(filename, 'temp/' + new_name)
 
             # Processing subdirectories using os.walk()
 
@@ -54,7 +54,7 @@ def get_fixed_filename(filename):
 
     new_name = ""
     # TODO: step-by-step, consider the problem cases and solve them
-    for i in range (len(filename)):
+    for i in range(len(filename)):
         if filename[i].isupper() and i != 0 and filename[i-1] != "_" and filename[i-1] != "(":
             new_name += "_"
             new_name += filename[i]
